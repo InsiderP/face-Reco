@@ -42,6 +42,7 @@ const WebcamCapture = () => {
   useEffect(() => {
     return () => {
       if (stream) {
+        console.log("aa")
         stream.getTracks().forEach(track => track.stop());
       }
     };
